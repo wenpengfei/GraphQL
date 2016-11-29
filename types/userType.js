@@ -1,16 +1,16 @@
-var graphql = require('graphql');
-import tagType from './tagType.js';
-const userType = new graphql.GraphQLObjectType({
+import { GraphQLObjectType, GraphQLInt, GraphQLString, GraphQLList } from 'graphql'
+import tagType from './tagType.js'
+
+const userType = new GraphQLObjectType({
   name: 'User',
   fields: {
-    id: { type: graphql.GraphQLInt },
-    name: { type: graphql.GraphQLString },
+    id: { type: GraphQLInt },
+    name: { type: GraphQLString },
     tags: {
-      type: new graphql.GraphQLList(tagType),
+      type: new GraphQLList(tagType),
       resolve: function(user) {
-        console.log('user', user)
         return [
-          {id:1, name:"xxx===x"},
+          {id:1, name:"xxxx"},
           {id:2, name:"xxxx"},
           {id:3, name:"xxxx"},
           {id:4, name:"xxxx"},
@@ -18,5 +18,6 @@ const userType = new graphql.GraphQLObjectType({
       }
     }
   }
-});
-export default userType;
+})
+
+export default userType

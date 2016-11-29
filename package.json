@@ -18,6 +18,6 @@
   },
   "author": "wpf <jquery.min.js@gmail.com>",
   "scripts": {
-    "start": "pm2 start config/pm2.json"
+    "start": "./node_modules/.bin/pm2 startOrRestart ./config/pm2.json"
   }
 }

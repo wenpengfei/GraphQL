@@ -1,11 +1,11 @@
-var graphql = require('graphql');
+import { GraphQLObjectType, GraphQLInt, GraphQLString } from 'graphql'
 
-const tagType = new graphql.GraphQLObjectType({
+const tagType = new GraphQLObjectType({
   name: 'tag',
   fields: {
-    id: { type: graphql.GraphQLInt },
-    name: { type: graphql.GraphQLString },
+    id: { type: GraphQLInt },
+    name: { type: GraphQLString },
   }
-});
+})
 
-export default tagType;
+export default tagType
