@@ -7,3 +7,7 @@ git clone https://github.com/wenpengfei/GraphQL.git
 cd GraphQL
 npm install
 ```
+## Running
+```
+npm start
+```
