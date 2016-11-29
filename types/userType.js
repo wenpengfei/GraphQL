@@ -1,4 +1,5 @@
 var graphql = require('graphql');
+import tagType from './tagType.js';
 const userType = new graphql.GraphQLObjectType({
   name: 'User',
   fields: {
