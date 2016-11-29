@@ -1,0 +1,11 @@
+{
+  "name": "graphQL",
+  "script": "./index.js",
+  "interpreter": "./node_modules/.bin/babel-node",
+  "watch": [
+    "./index.js"
+  ],
+  "max_restarts": 5,
+  "restart_delay": 100,
+  "autorestart": false
+}
