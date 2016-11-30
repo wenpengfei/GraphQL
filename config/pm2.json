@@ -4,6 +4,7 @@
   "interpreter": "./node_modules/.bin/babel-node",
   "watch": [
     "./server.js",
+    "./schema.js",
     "./types/tagType.js",
     "./types/userType.js",
   ],
