@@ -9,7 +9,8 @@
   },
   "author": "wpf <jquery.min.js@gmail.com>",
   "scripts": {
-    "start": "./node_modules/.bin/pm2 startOrRestart ./config/pm2.json"
+    "start": "./node_modules/.bin/pm2 startOrRestart ./config/pm2.json",
+    "lint":"./node_modules/.bin/eslint --ext .js ./"
   },
   "dependencies": {
     "express": "^4.14.0",

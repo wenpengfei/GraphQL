@@ -9,4 +9,4 @@ app.use('/graphql', graphqlHTTP({
 }))
 app.listen(2333)
 
-console.log('GraphQL server running on http://localhost:2333/graphql')
+// console.log('GraphQL server running on http://localhost:2333/graphql')

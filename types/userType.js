@@ -10,10 +10,10 @@ const userType = new GraphQLObjectType({
       type: new GraphQLList(tagType),
       resolve: function() {
         return [
-          {id:1, name:"xxxx"},
-          {id:2, name:"xxxx"},
-          {id:3, name:"xxxx"},
-          {id:4, name:"xxxx"},
+          {id: 1, name: 'xxxx'},
+          {id: 2, name: 'xxxx'},
+          {id: 3, name: 'xxxx'},
+          {id: 4, name: 'xxxx'},
         ]
       },
     },
