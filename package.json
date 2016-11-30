@@ -7,10 +7,16 @@
     "url": "https://github.com/wenpengfei/GraphQL.git",
     "type": "git"
   },
+  "pre-commit": {
+    "run": [
+      "lint"
+    ],
+    "colors": true
+  },
   "author": "wpf <jquery.min.js@gmail.com>",
   "scripts": {
     "start": "./node_modules/.bin/pm2 startOrRestart ./config/pm2.json",
-    "lint":"./node_modules/.bin/eslint --ext .js ./"
+    "lint": "./node_modules/.bin/eslint --ext .js ./"
   },
   "dependencies": {
     "express": "^4.14.0",
@@ -26,6 +32,7 @@
     "eslint-config-standard": "^6.2.1",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
-    "pm2": "^2.1.6"
+    "pm2": "^2.1.6",
+    "pre-commit": "^1.1.3"
   }
 }
