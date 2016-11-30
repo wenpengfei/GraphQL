@@ -5,7 +5,7 @@ const tagType = new GraphQLObjectType({
   fields: {
     id: { type: GraphQLInt },
     name: { type: GraphQLString },
-  }
+  },
 })
 
 export default tagType

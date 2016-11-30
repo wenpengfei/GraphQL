@@ -8,16 +8,16 @@ const userType = new GraphQLObjectType({
     name: { type: GraphQLString },
     tags: {
       type: new GraphQLList(tagType),
-      resolve: function(user) {
+      resolve: function() {
         return [
           {id:1, name:"xxxx"},
           {id:2, name:"xxxx"},
           {id:3, name:"xxxx"},
           {id:4, name:"xxxx"},
         ]
-      }
-    }
-  }
+      },
+    },
+  },
 })
 
 export default userType

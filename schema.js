@@ -1,5 +1,6 @@
 import { GraphQLSchema, GraphQLObjectType, GraphQLInt } from 'graphql'
 import userType from './types/userType.js'
+import data from './data.json'
 
 const schema = new GraphQLSchema({
   query: new GraphQLObjectType({
@@ -8,14 +9,14 @@ const schema = new GraphQLSchema({
       user: {
         type: userType,
         args: {
-          id: { type: GraphQLInt }
+          id: { type: GraphQLInt },
         },
-        resolve: function (_, args) {
+        resolve: function(_, args) {
           return data[args.id]
-        }
-      }
-    }
-  })
+        },
+      },
+    },
+  }),
 })
 
 export default schema

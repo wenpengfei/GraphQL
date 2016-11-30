@@ -1,0 +1,23 @@
+---
+  parser: 'babel-eslint'
+  extends:
+      - 'standard'
+  rules:
+    comma-dangle:
+      - 2
+      - 'always-multiline'
+    space-before-function-paren:
+      - 2
+      -
+        anonymous: 'never'
+        named: 'never'
+    arrow-parens:
+      - 2
+      - 'as-needed'
+    no-console: 1
+    generator-star-spacing: 0
+    yield-star-spacing: 0
+    no-unused-vars:
+      - 1
+      -
+        args: 'after-used'
